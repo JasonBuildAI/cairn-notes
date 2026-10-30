@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+
+# logs and environment
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.*
+!.env.example
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# Never publish upstream source snapshots or archives
+pi-1.3.0/
+opensandbox-1.1.1/
+legacy-*/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar

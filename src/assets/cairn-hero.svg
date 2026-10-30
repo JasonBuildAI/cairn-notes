@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760" role="img" aria-labelledby="title desc">
+  <title id="title">一座层叠石堆</title>
+  <desc id="desc">五块天然石头层层堆叠成路标，顶部长出一株小芽，周围有淡淡的地形等高线。</desc>
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="48%" r="52%">
+      <stop offset="0" stop-color="#e7dcc6" stop-opacity=".82"/>
+      <stop offset=".58" stop-color="#e3ddce" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#e3ddce" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stoneA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eadfcf"/>
+      <stop offset=".55" stop-color="#d3c4ad"/>
+      <stop offset="1" stop-color="#b7a98f"/>
+    </linearGradient>
+    <linearGradient id="stoneB" x1="0" y1="0" x2="1" y2=".9">
+      <stop offset="0" stop-color="#ded3c2"/>
+      <stop offset=".58" stop-color="#c3b7a4"/>
+      <stop offset="1" stop-color="#a99e8c"/>
+    </linearGradient>
+    <linearGradient id="stoneC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe6d7"/>
+      <stop offset=".62" stop-color="#d7c9b3"/>
+      <stop offset="1" stop-color="#bcae95"/>
+    </linearGradient>
+    <linearGradient id="stoneD" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c8c7b5"/>
+      <stop offset=".6" stop-color="#aaa994"/>
+      <stop offset="1" stop-color="#898c78"/>
+    </linearGradient>
+    <linearGradient id="stoneE" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e2d2bb"/>
+      <stop offset=".62" stop-color="#c4b399"/>
+      <stop offset="1" stop-color="#a7957d"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="13" stdDeviation="12" flood-color="#314138" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <circle cx="380" cy="383" r="336" fill="url(#halo)"/>
+  <g fill="none" stroke="#708779" stroke-width="1.1" opacity=".27">
+    <path d="M50 536c81-56 150-70 238-40 68 23 102 79 181 82 72 3 125-30 209-69"/>
+    <path d="M25 579c101-58 181-62 266-25 72 31 109 82 191 84 70 2 129-27 206-65"/>
+    <path d="M75 492c69-42 128-52 204-28 64 20 100 68 176 72 67 4 117-20 185-54"/>
+    <path d="M124 445c57-30 106-35 164-17 56 18 91 56 151 59 52 3 92-13 144-38"/>
+    <path d="M181 401c43-19 79-22 121-10 42 13 70 40 112 43 37 2 67-8 104-25"/>
+  </g>
+
+  <g fill="#d7c6ad" opacity=".48">
+    <circle cx="124" cy="485" r="4"/>
+    <circle cx="638" cy="501" r="5"/>
+    <circle cx="591" cy="429" r="3"/>
+    <circle cx="185" cy="612" r="3"/>
+    <circle cx="558" cy="636" r="4"/>
+  </g>
+
+  <ellipse cx="386" cy="691" rx="246" ry="27" fill="#3b4c40" opacity=".13"/>
+
+  <g filter="url(#shadow)">
+    <path d="M128 650c11-36 61-59 150-65 84-6 176 1 247 22 61 18 98 36 104 58-8 22-79 37-184 41-125 5-256-6-301-28-13-7-18-17-16-28Z" fill="url(#stoneA)"/>
+    <path d="M181 576c15-35 63-55 135-59 68-4 132 7 166 34 11 9 14 21 7 33-31 20-82 29-147 29-73 0-128-10-153-24-8-4-10-8-8-13Z" fill="url(#stoneB)"/>
+    <path d="M222 501c11-32 52-52 112-55 56-4 106 7 125 31 7 9 6 19-3 29-27 19-68 27-120 27-57 0-99-10-113-22-5-4-5-7-1-10Z" fill="url(#stoneC)"/>
+    <path d="M264 426c7-29 39-49 86-52 42-3 79 5 96 25 6 7 6 16-1 24-18 17-50 25-89 25-42 0-76-7-90-17-4-3-4-4-2-5Z" fill="url(#stoneD)"/>
+    <path d="M307 353c8-24 30-38 61-40 28-2 51 5 64 18 5 6 5 13-1 19-13 12-36 18-64 18-30 0-54-5-62-12-2-2-2-3 2-3Z" fill="url(#stoneE)"/>
+    <path d="M345 292c4-15 17-26 34-28 17-1 31 4 38 15 3 5 2 11-4 15-8 6-22 9-38 9-16 0-27-3-31-7-1-1-1-2 1-4Z" fill="url(#stoneC)"/>
+  </g>
+
+  <g fill="none" stroke="#756f61" stroke-linecap="round" opacity=".26">
+    <path d="M176 639c67 13 194 17 289 3" stroke-width="1.2"/>
+    <path d="M229 581c54 8 137 8 195-1" stroke-width="1"/>
+    <path d="M270 511c38 5 89 4 124-2" stroke-width=".9"/>
+    <path d="M303 437c28 3 60 2 80-2" stroke-width=".8"/>
+    <path d="M333 361c17 2 34 1 45-1" stroke-width=".8"/>
+    <path d="M359 294c9 1 18 1 23 0" stroke-width=".7"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M383 267c3-15 7-27 15-38" stroke="#6f8c77" stroke-width="3.1"/>
+    <path d="M397 235c9-10 19-12 30-7-6 12-16 16-30 7Z" fill="#88ad91" stroke="none"/>
+    <path d="M386 246c-9-8-18-9-27-3 6 10 15 12 27 3Z" fill="#a4bfa4" stroke="none"/>
+    <path d="M400 224c11-4 20-1 26 6-9 7-18 6-26-6Z" fill="#b8c9a7" stroke="none"/>
+  </g>
+
+  <g fill="#a58f74" opacity=".7">
+    <path d="M109 667c7-10 20-14 33-10 9 3 14 10 12 16-9 6-23 8-35 5-8-2-12-6-10-11Z"/>
+    <path d="M616 671c4-7 14-11 24-9 7 1 12 6 12 11-5 6-15 9-25 8-8-1-13-5-11-10Z"/>
+    <path d="M553 651c4-5 11-7 18-5 5 1 8 4 8 7-4 4-11 6-18 5-5-1-9-3-8-7Z" opacity=".55"/>
+  </g>
+</svg>

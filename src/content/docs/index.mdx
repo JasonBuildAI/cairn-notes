@@ -1,0 +1,84 @@
+---
+title: 路标笔记
+description: 一路学习，一路留标。关于 AI Agent 系统、运行时与工程边界的公开学习笔记。
+template: splash
+hero:
+  tagline: 一路学习，一路留标。把复杂的系统拆开、跑通，再留下可复核的路径。
+  image:
+    file: ../../assets/cairn-hero.svg
+    alt: 层叠的石头构成一座路标
+  actions:
+    - text: 进入 Pi 学习区
+      link: ./pi/
+      icon: right-arrow
+      variant: primary
+    - text: 进入 OpenSandbox
+      link: ./opensandbox/
+      icon: right-arrow
+      variant: secondary
+    - text: GitHub
+      link: https://github.com/JasonBuildAI/cairn-notes
+      icon: external
+      variant: minimal
+---
+
+<div class="cairn-intro">
+	<p class="cairn-eyebrow">A PUBLIC LEARNING ARCHIVE</p>
+	<h2>不是资料搬运，是可复核的系统理解。</h2>
+	<p class="cairn-lede">Cairn Notes 收录长期学习中逐渐成熟的部分：固定版本、沿调用链阅读、用实验和证据校验结论。现在的两套深读，分别从最小 Agent Harness 和沙箱执行平台切入同一个问题——模型如何安全、可靠地做事。</p>
+</div>
+
+<div class="collection-grid">
+	<a class="collection-card collection-card--pi" href="./pi/">
+		<div class="collection-topline">
+			<span class="collection-number">01</span>
+			<span class="collection-kicker">MINIMAL AGENT HARNESS</span>
+		</div>
+		<h3>Pi 1.3.0</h3>
+		<p>从一次模型调用开始，拆开循环、上下文、工具、扩展与多种入口，最后亲手重建一个 mini agent。</p>
+		<div class="collection-footer">
+			<span>13 篇 · TypeScript · v1.3.0</span>
+			<span class="collection-arrow" aria-hidden="true">→</span>
+		</div>
+	</a>
+	<a class="collection-card collection-card--sandbox" href="./opensandbox/">
+		<div class="collection-topline">
+			<span class="collection-number">02</span>
+			<span class="collection-kicker">AI EXECUTION PLATFORM</span>
+		</div>
+		<h3>OpenSandbox 1.1.1</h3>
+		<p>沿一次沙箱任务的生命周期，穿过控制面、运行时、执行层、网络与证据流，理解不可信代码如何被约束。</p>
+		<div class="collection-footer">
+			<span>14 篇 · Python / 多语言 · release-1.1.1</span>
+			<span class="collection-arrow" aria-hidden="true">→</span>
+		</div>
+	</a>
+</div>
+
+<div class="cairn-section-heading">
+	<p class="cairn-eyebrow">HOW TO READ</p>
+	<h2>三条阅读约束</h2>
+</div>
+
+<div class="principle-grid">
+	<article>
+		<span class="principle-index">01</span>
+		<h3>版本固定</h3>
+		<p>每套笔记绑定明确的 release 与 commit。先知道你读的是哪一版，再讨论“支持”与“不支持”。</p>
+	</article>
+	<article>
+		<span class="principle-index">02</span>
+		<h3>沿链路阅读</h3>
+		<p>不按目录逐文件通读，而是追一次请求或任务如何穿过系统。每层只回答一个关键问题。</p>
+	</article>
+	<article>
+		<span class="principle-index">03</span>
+		<h3>标注边界</h3>
+		<p>把“命令存在”“本机验证”“需要集群”分开写。能指出结论在什么条件下失效，才算真正理解。</p>
+	</article>
+</div>
+
+<div class="start-note">
+	<p><strong>第一次来？</strong> 从 <a href="./pi/">Pi 总览</a> 建立最小 Agent 系统地图，再去 <a href="./opensandbox/">OpenSandbox</a> 理解代码在哪里安全执行。</p>
+	<p>这里不打包上游源码，只发布经过筛选的学习笔记；来源、版本和许可见 <a href="./rights/">来源与版权</a>。</p>
+</div>

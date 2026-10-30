@@ -1,0 +1,27 @@
+{
+  "name": "cairn-notes",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "一路学习，一路留标。关于 AI Agent 系统、运行时与工程边界的公开学习笔记。",
+  "license": "MIT",
+  "homepage": "https://jasonbuildai.github.io/cairn-notes/",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "npm run check:content && astro build",
+    "preview": "astro preview",
+    "check:content": "node scripts/check-public-content.mjs",
+    "assets": "node scripts/generate-brand-assets.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/starlight": "^0.42.7",
+    "astro": "^7.2.10",
+    "sharp": "^0.35.3"
+  }
+}
