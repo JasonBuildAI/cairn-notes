@@ -19,7 +19,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Cairn Notes',
-			description: '一路学习，一路留标。关于 AI Agent 系统、运行时与工程边界的公开学习笔记。',
+			description: '我学习 AI Agent 时整理的笔记，主要包括 Pi 和 OpenSandbox。',
 			logo: {
 				src: './src/assets/cairn-mark.svg',
 				alt: 'Cairn Notes',
