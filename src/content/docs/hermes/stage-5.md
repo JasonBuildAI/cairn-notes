@@ -5,7 +5,7 @@ description: "阶段 5：Provider、凭据与 Fallback。沿源码主线理解�
 
 > 课程：Hermes Agent 源码课 · 阶段卷
 > 前置：阶段 3、4
-> 对应总览：`01-一次Turn的一生.md` 第 8 节，`02-核心机制.md` 第 4 节
+> 对应总览：`turn-lifecycle.md` 第 8 节，`core-mechanisms.md` 第 4 节
 > 本阶段目标：区分请求构造、传输重试、凭据轮换和 provider fallback，理解为什么 fallback 必须重建上下文。
 
 ## 1. 本阶段解决什么

@@ -5,7 +5,7 @@ description: "阶段 1：对象模型与控制面。沿源码主线理解事实�
 
 > 课程：LoopX 源码课 · 阶段卷
 > 前置：阶段 0，知道六层地图
-> 对应总览：`00-全局地图.md`、`02-核心机制.md`
+> 对应总览：`overview.md`、`core-mechanisms.md`
 > 本阶段目标：厘清 Goal、Todo、Claim、Gate、Run 与 projection 的所有权。
 
 ## 1. 本阶段解决什么

@@ -5,7 +5,7 @@ description: "阶段 6：Session、Transcript 与 Writer。沿源码主线理解
 
 > 课程：OpenClaw 源码课 · 阶段卷
 > 前置：阶段 1～5
-> 对应总览：`01-一条消息的一生.md` 的落账部分
+> 对应总览：`message-lifecycle.md` 的落账部分
 > 本阶段目标：理解 transcript 的 canonical 地位、append/rewrite、分支、修复与 writer 提交。
 
 ## 1. 本阶段解决什么

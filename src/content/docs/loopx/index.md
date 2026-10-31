@@ -9,7 +9,7 @@ description: "LoopX 2.1.1 源码课导读：控制面定位、七块职责、阅
 
 > 基线：`loopx-2.1.1`，Git tag `v2.1.1`，提交 `87e5b4f88d207adf062eea57002cda6fe04fd535`（2026-10-23）。
 > 本文路径相对 `$LOOPX_SRC`。
-> 旧版讲义已移到 `archive/legacy-guide/`，只作历史对照，不再作为本课结论来源。
+> 旧版讲义不在本仓库中；本课只以 v2.1.1 源码为准，旧版结论不再作为依据。
 
 ## 一句话理解 LoopX
 
@@ -74,10 +74,10 @@ Validation → durable writeback → quota spend → scheduler
 
 | 顺序 | 文档 | 你会得到什么 |
 | --- | --- | --- |
-| 0 | `00-全局地图.md` | 产品定位、七块、六层状态、四类运行时责任、目录与术语 |
-| 1 | `01-一次Turn的一生.md` | 从 `should-run` 到 Host、七阶段结算和恢复的完整主线 |
-| 2 | `02-核心机制.md` | Goal/Todo/Claim/Gate/Quota/Evidence/Projection、上下文与扩展 |
-| 3 | `03-工程实战.md` | 调试路径、源码实验、失败矩阵、修改内核对齐与毕业练习 |
+| 0 | [全局地图](overview/) | 产品定位、七块、六层状态、四类运行时责任、目录与术语 |
+| 1 | [一次 Turn 的一生](turn-lifecycle/) | 从 `should-run` 到 Host、七阶段结算和恢复的完整主线 |
+| 2 | [核心机制](core-mechanisms/) | Goal/Todo/Claim/Gate/Quota/Evidence/Projection、上下文与扩展 |
+| 3 | [工程实战](engineering/) | 调试路径、源码实验、失败矩阵、修改内核对齐与毕业练习 |
 
 ## 阶段课（源码深入）
 

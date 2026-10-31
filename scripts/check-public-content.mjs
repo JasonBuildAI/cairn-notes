@@ -56,6 +56,57 @@ function inspectDocs(directory) {
 	}
 }
 
+function pageUrlFor(file) {
+	let slug = path
+		.relative(docsRoot, file)
+		.replaceAll(path.sep, '/')
+		.replace(/\.mdx?$/, '');
+	if (slug === 'index') slug = '';
+	else if (slug.endsWith('/index')) slug = slug.slice(0, -'/index'.length);
+	return slug ? `/${slug}/` : '/';
+}
+
+function readBasePath() {
+	const config = fs.readFileSync(path.join(root, 'astro.config.mjs'), 'utf8');
+	const match = config.match(/const base = '([^']*)'/);
+	return match ? match[1].replace(/\/$/, '') : '';
+}
+
+function inspectLinks(directory, basePath) {
+	const files = [];
+	const collect = (current) => {
+		for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+			const fullPath = path.join(current, entry.name);
+			if (entry.isDirectory()) collect(fullPath);
+			else if (/\.(md|mdx)$/.test(entry.name)) files.push(fullPath);
+		}
+	};
+	collect(directory);
+
+	const urls = new Set();
+	for (const file of files) urls.add(pageUrlFor(file));
+
+	for (const file of files) {
+		const relativePath = path.relative(root, file).replaceAll(path.sep, '/');
+		const pageUrl = new URL(`https://example.invalid${pageUrlFor(file)}`);
+		const text = fs.readFileSync(file, 'utf8');
+		text.split(/\r?\n/).forEach((line, index) => {
+			for (const match of line.matchAll(/\]\(([^)\s]+)\)/g)) {
+				let target = match[1];
+				if (/^(https?:|mailto:|tel:|#)/.test(target)) continue;
+				if (basePath && (target === basePath || target.startsWith(`${basePath}/`))) {
+					target = target.slice(basePath.length) || '/';
+				}
+				const url = target.startsWith('/') ? new URL(target, 'https://example.invalid') : new URL(target, pageUrl);
+				const pathname = url.pathname.endsWith('/') ? url.pathname : `${url.pathname}/`;
+				if (!urls.has(pathname)) {
+					errors.push(`内部链接失效：${relativePath}:${index + 1} → ${match[1]}`);
+				}
+			}
+		});
+	}
+}
+
 const docsRoot = path.join(root, 'src/content/docs');
 if (!fs.existsSync(docsRoot)) {
 	console.error('找不到 src/content/docs。请从仓库根目录运行。');
@@ -114,6 +165,8 @@ for (const [course, lifecyclePage] of Object.entries(lifecyclePages)) {
 for (const file of expected) {
 	if (!fs.existsSync(path.join(docsRoot, file))) errors.push(`缺少必要页面：src/content/docs/${file}`);
 }
+
+inspectLinks(docsRoot, readBasePath());
 
 if (errors.length > 0) {
 	console.error('公开内容检查失败：');

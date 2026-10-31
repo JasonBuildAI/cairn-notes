@@ -13,9 +13,9 @@ description: "十个源码阶段的阅读顺序、阶段地图、建议节奏与
 
 | 读法 | 适合解决的问题 |
 | --- | --- |
-| `00-全局地图.md` | 第一次知道目录、对象和边界 |
-| `01-一次Run的一生.md` | 先获得完整生命周期直觉 |
-| `02-核心机制.md`、`03-工程实战.md` | 按主题补齐上下文、工具、模型和工程 |
+| `overview.md` | 第一次知道目录、对象和边界 |
+| `run-lifecycle.md` | 先获得完整生命周期直觉 |
+| `core-mechanisms.md`、`engineering.md` | 按主题补齐上下文、工具、模型和工程 |
 | 本卷阶段 0～9 | 沿源码主链逐段建立可验证的因果关系 |
 
 ## 一条贯穿全卷的大脉络
@@ -59,16 +59,16 @@ description: "十个源码阶段的阅读顺序、阶段地图、建议节奏与
 
 | 阶段 | 主题 | 进入前应知道 | 完成后应能做 |
 | --- | --- | --- | --- |
-| 0 | [环境与源码地图](stage-0/) | Python/Node 基础 | 解释 harness/app 边界与端口职责 |
-| 1 | [入口与 Run 生命周期](stage-1/) | HTTP、异步任务 | 画出 pending→running→terminal |
-| 2 | [Agent 装配与 LangGraph 循环](stage-2/) | LangGraph 基本概念 | 说出 middleware 的装配顺序 |
-| 3 | [上下文与记忆](stage-3/) | token 与消息格式 | 区分 prompt、checkpoint、memory |
-| 4 | [工具与 Sandbox](stage-4/) | 工具调用协议 | 追踪一次工具执行到隔离环境 |
-| 5 | [模型接入与 Provider 适配](stage-5/) | provider API | 解释白名单、推理档位与适配器 |
-| 6 | [持久化与恢复](stage-6/) | 状态机、事务 | 从 journal 判断该补哪一步 |
-| 7 | [扩展渠道与多 Agent](stage-7/) | 插件/消息渠道 | 复用同一 Run 接单口扩展入口 |
-| 8 | [工程化与故障排查](stage-8/) | 测试、日志 | 用测试和证据定位故障层 |
-| 9 | [毕业设计](stage-9/) | 前九阶段 | 完成一个可审计的源码改造 |
+| 0 | [环境与源码地图](../stage-0/) | Python/Node 基础 | 解释 harness/app 边界与端口职责 |
+| 1 | [入口与 Run 生命周期](../stage-1/) | HTTP、异步任务 | 画出 pending→running→terminal |
+| 2 | [Agent 装配与 LangGraph 循环](../stage-2/) | LangGraph 基本概念 | 说出 middleware 的装配顺序 |
+| 3 | [上下文与记忆](../stage-3/) | token 与消息格式 | 区分 prompt、checkpoint、memory |
+| 4 | [工具与 Sandbox](../stage-4/) | 工具调用协议 | 追踪一次工具执行到隔离环境 |
+| 5 | [模型接入与 Provider 适配](../stage-5/) | provider API | 解释白名单、推理档位与适配器 |
+| 6 | [持久化与恢复](../stage-6/) | 状态机、事务 | 从 journal 判断该补哪一步 |
+| 7 | [扩展渠道与多 Agent](../stage-7/) | 插件/消息渠道 | 复用同一 Run 接单口扩展入口 |
+| 8 | [工程化与故障排查](../stage-8/) | 测试、日志 | 用测试和证据定位故障层 |
+| 9 | [毕业设计](../stage-9/) | 前九阶段 | 完成一个可审计的源码改造 |
 
 ## 建议节奏
 

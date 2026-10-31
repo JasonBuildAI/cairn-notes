@@ -5,7 +5,7 @@ description: "阶段 3：上下文压缩与 Pruning。沿源码主线理解事�
 
 > 课程：OpenClaw 源码课 · 阶段卷
 > 前置：阶段 2
-> 对应总览：`02-核心机制.md` 的上下文部分
+> 对应总览：`core-mechanisms.md` 的上下文部分
 > 本阶段目标：区分 system prompt、workspace bootstrap、compaction 与 cache-TTL pruning 的所有者和副作用。
 
 ## 1. 本阶段解决什么

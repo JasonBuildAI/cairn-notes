@@ -5,7 +5,7 @@ description: "阶段 1：Gateway、Session 与 Run。沿源码主线理解事实
 
 > 课程：OpenClaw 源码课 · 阶段卷
 > 前置：阶段 0
-> 对应总览：`01-一条消息的一生.md` 的准入部分
+> 对应总览：`message-lifecycle.md` 的准入部分
 > 本阶段目标：掌握 chat.send 接纳、幂等、lane、writer fence 与 superseded 的真实语义。
 
 ## 1. 本阶段解决什么

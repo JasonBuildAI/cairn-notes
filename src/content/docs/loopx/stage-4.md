@@ -5,7 +5,7 @@ description: "阶段 4：Capability、Provider 与 Host。沿源码主线理解�
 
 > 课程：LoopX 源码课 · 阶段卷
 > 前置：阶段 3，理解 Turn Envelope 与七阶段事务
-> 对应总览：`02-核心机制.md` 的工具与扩展部分
+> 对应总览：`core-mechanisms.md` 的工具与扩展部分
 > 本阶段目标：分清“领域规则”“外部实现”“候选执行者”三种责任。
 
 ## 1. 本阶段解决什么

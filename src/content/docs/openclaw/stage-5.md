@@ -5,7 +5,7 @@ description: "阶段 5：模型认证、Fallback 与 Harness。沿源码主线�
 
 > 课程：OpenClaw 源码课 · 阶段卷
 > 前置：阶段 2～4
-> 对应总览：`02-核心机制.md` 的模型接入部分
+> 对应总览：`core-mechanisms.md` 的模型接入部分
 > 本阶段目标：分清模型解析、认证、候选链、模型 fallback 与 harness 选择。
 
 ## 1. 本阶段解决什么

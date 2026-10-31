@@ -5,7 +5,7 @@ description: "阶段 6：SessionDB 与恢复。沿源码主线理解事实、合
 
 > 课程：Hermes Agent 源码课 · 阶段卷
 > 前置：阶段 1、4
-> 对应总览：`01-一次Turn的一生.md` 第 10 节，`02-核心机制.md` 第 5 节
+> 对应总览：`turn-lifecycle.md` 第 10 节，`core-mechanisms.md` 第 5 节
 > 本阶段目标：理解 transcript、admission、lease、compression lock 与 migration 怎样组成可恢复账本。
 
 ## 1. 本阶段解决什么

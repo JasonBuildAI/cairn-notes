@@ -5,7 +5,7 @@ description: "阶段 5：验证、写回、配额与调度。沿源码主线理�
 
 > 课程：LoopX 源码课 · 阶段卷
 > 前置：阶段 4，理解 Capability、Provider 与 Host result
-> 对应总览：`01-一次Turn的一生.md` 的结算部分
+> 对应总览：`turn-lifecycle.md` 的结算部分
 > 本阶段目标：掌握 result kind、commit order、terminal closeout 和崩溃后的前缀恢复。
 
 ## 1. 本阶段解决什么

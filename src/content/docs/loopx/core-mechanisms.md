@@ -453,4 +453,4 @@ Self-repair 不允许：
 6. 因为它发生在 writeback 和 spend **之后**，表示配额已经提交、只剩终局收尾失败。如果把它归进 `NO_SPEND_RESULT_KINDS`，调用方会误以为未扣费并重试，造成重复 spend 和错误预算；正确恢复只补 closeout。
 7. Capability 定义领域合同：什么算成功、如何观察/验证、允许哪些 typed transition；Extension 是安装与交付单元，可以携带 Provider/Capability 实现，但“安装”不自动获得 Kernel 权限。前者是语义与验证，后者是分发与组合，二者正交。
 
-*下一章：`03-工程实战.md`，把这些机制落到调试、实验、修改和验收。*
+*下一章：`engineering.md`，把这些机制落到调试、实验、修改和验收。*

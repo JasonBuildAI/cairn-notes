@@ -5,7 +5,7 @@ description: "阶段 3：Prompt、上下文与压缩。沿源码主线理解事�
 
 > 课程：Hermes Agent 源码课 · 阶段卷
 > 前置：阶段 1、2
-> 对应总览：`01-一次Turn的一生.md` 第 5～6 节，`02-核心机制.md` 第 2 节
+> 对应总览：`turn-lifecycle.md` 第 5～6 节，`core-mechanisms.md` 第 2 节
 > 本阶段目标：区分 `messages`、`api_messages` 与 system prompt，理解压缩为什么是唯一允许改变历史字节的边界。
 
 ## 1. 本阶段解决什么

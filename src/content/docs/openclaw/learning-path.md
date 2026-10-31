@@ -51,16 +51,16 @@ Transcript commit → Reply → 原渠道 / UI
 
 | 阶段 | 文档 | 你会得到什么 |
 | --- | --- | --- |
-| 0 | [阶段0-环境与源码地图.md](stage-0/) | 版本、目录、进程拓扑、六个核心身份 |
-| 1 | [阶段1-Gateway-Session与Run.md](stage-1/) | `chat.send`、in-flight、lane、writer fence、取消 |
-| 2 | [阶段2-入口与AgentLoop.md](stage-2/) | 渠道 ingress、两层循环、工具批次、steering、follow-up |
-| 3 | [阶段3-上下文压缩与Pruning.md](stage-3/) | system prompt、bootstrap、compaction、cache-TTL pruning |
-| 4 | [阶段4-工具审批与Sandbox.md](stage-4/) | 工具装配、before_tool_call 顺序、deny/defer/report/request、隔离 |
-| 5 | [阶段5-模型认证Fallback与Harness.md](stage-5/) | model ref、auth profile、候选链、fallback、auto harness |
-| 6 | [阶段6-Session-Transcript与Writer.md](stage-6/) | SQLite transcript、分支、rewrite、终态与恢复 |
-| 7 | [阶段7-插件渠道协议与UI.md](stage-7/) | Plugin/MCP/Skills、渠道、Gateway 事件、UI/子 Agent |
-| 8 | [阶段8-工程化测试与运维.md](stage-8/) | 检查链、schema 迁移、writer/lane 测试、故障排查 |
-| 9 | [阶段9-毕业设计.md](stage-9/) | 设计一个可审批、可回放、可恢复的扩展 |
+| 0 | [环境与源码地图](../stage-0/) | 版本、目录、进程拓扑、六个核心身份 |
+| 1 | [Gateway、Session 与 Run](../stage-1/) | `chat.send`、in-flight、lane、writer fence、取消 |
+| 2 | [入口与 Agent Loop](../stage-2/) | 渠道 ingress、两层循环、工具批次、steering、follow-up |
+| 3 | [上下文压缩与 Pruning](../stage-3/) | system prompt、bootstrap、compaction、cache-TTL pruning |
+| 4 | [工具审批与 Sandbox](../stage-4/) | 工具装配、before_tool_call 顺序、deny/defer/report/request、隔离 |
+| 5 | [模型认证、Fallback 与 Harness](../stage-5/) | model ref、auth profile、候选链、fallback、auto harness |
+| 6 | [Session、Transcript 与 Writer](../stage-6/) | SQLite transcript、分支、rewrite、终态与恢复 |
+| 7 | [插件、渠道、协议与 UI](../stage-7/) | Plugin/MCP/Skills、渠道、Gateway 事件、UI/子 Agent |
+| 8 | [工程化、测试与运维](../stage-8/) | 检查链、schema 迁移、writer/lane 测试、故障排查 |
+| 9 | [毕业设计](../stage-9/) | 设计一个可审批、可回放、可恢复的扩展 |
 
 ## 三条贯穿判断
 

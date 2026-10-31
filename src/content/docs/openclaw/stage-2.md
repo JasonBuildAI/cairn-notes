@@ -5,7 +5,7 @@ description: "阶段 2：入口与 Agent Loop。沿源码主线理解事实、�
 
 > 课程：OpenClaw 源码课 · 阶段卷
 > 前置：阶段 1
-> 对应总览：`01-一条消息的一生.md` 的执行部分
+> 对应总览：`message-lifecycle.md` 的执行部分
 > 本阶段目标：看清渠道 ingress 如何汇合，以及循环的模型轮、工具批次、steering 与 follow-up。
 
 ## 1. 本阶段解决什么

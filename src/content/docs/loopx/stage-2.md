@@ -5,7 +5,7 @@ description: "阶段 2：ShouldRun 与 Quota。沿源码主线理解事实、合
 
 > 课程：LoopX 源码课 · 阶段卷
 > 前置：阶段 1，理解 Goal、Todo、Claim、Gate 与投影
-> 对应总览：`01-一次Turn的一生.md` 的准入部分
+> 对应总览：`turn-lifecycle.md` 的准入部分
 > 本阶段目标：把 `should_run=false` 拆成不同原因，并说明 `true` 为什么仍不是任意动作授权。
 
 ## 1. 本阶段解决什么

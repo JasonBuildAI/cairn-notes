@@ -516,4 +516,4 @@ host_execute → typed_result → validation
 
 讲清楚这张图的标志是：你能指出**事实源、幂等身份、恢复入口**，而不是只会说“失败了就再跑一遍”。
 
-*下一章：`02-核心机制.md`，把 Goal、Todo、Claim、Gate、Quota、Evidence、Projection 和扩展边界拆开。*
+*下一章：`core-mechanisms.md`，把 Goal、Todo、Claim、Gate、Quota、Evidence、Projection 和扩展边界拆开。*

@@ -5,7 +5,7 @@ description: "阶段 3：Turn 计划与事务。沿源码主线理解事实、�
 
 > 课程：LoopX 源码课 · 阶段卷
 > 前置：阶段 2，理解 should-run
-> 对应总览：`01-一次Turn的一生.md`
+> 对应总览：`turn-lifecycle.md`
 > 本阶段目标：看清一次 Turn 的 identity、envelope、七阶段与结算计划。
 
 ## 1. 本阶段解决什么

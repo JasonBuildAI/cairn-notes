@@ -5,7 +5,7 @@ description: "阶段 4：工具与 Sandbox。沿源码主线理解事实、合�
 
 > 课程：DeerFlow 源码课 · 阶段卷
 > 前置：阶段 2、3
-> 对应总览：`02-核心机制.md` 的工具与沙箱部分
+> 对应总览：`core-mechanisms.md` 的工具与沙箱部分
 > 本阶段目标：从一次 tool call 追到 middleware、sandbox lease、执行结果和 receipt。
 
 ## 1. 本阶段解决什么

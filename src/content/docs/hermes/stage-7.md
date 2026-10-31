@@ -5,7 +5,7 @@ description: "阶段 7：扩展平台与多 Agent。沿源码主线理解事实�
 
 > 课程：Hermes Agent 源码课 · 阶段卷
 > 前置：阶段 1、4、6
-> 对应总览：`02-核心机制.md` 第 6～7 节，`03-工程实战.md` 第 6 节
+> 对应总览：`core-mechanisms.md` 第 6～7 节，`engineering.md` 第 6 节
 > 本阶段目标：理解 Hermes 怎样长出工具、provider、渠道、调度与子 Agent，而不是复制一套核心循环。
 
 ## 1. 本阶段解决什么

@@ -52,16 +52,16 @@ Writeback → Spend → Apply/Ack → Closeout     结算层
 
 | 阶段 | 文档 | 你会得到什么 |
 | --- | --- | --- |
-| 0 | [阶段0-环境与源码地图.md](stage-0/) | 版本、目录、六层状态和最小阅读实验 |
-| 1 | [阶段1-对象模型与控制面.md](stage-1/) | Goal、Todo、Claim、Gate、Run、投影各自拥有什么 |
-| 2 | [阶段2-ShouldRun与Quota.md](stage-2/) | 为什么现在能跑/不能跑，false 的不同恢复路径 |
-| 3 | [阶段3-Turn计划与事务.md](stage-3/) | Turn Envelope、turn_key 与七阶段合同 |
-| 4 | [阶段4-Capability-Provider与Host.md](stage-4/) | 领域能力、Provider 生命周期、Host 请求/结果 |
-| 5 | [阶段5-验证写回配额与调度.md](stage-5/) | 结果分类、写回顺序、spend、apply/ack、closeout |
-| 6 | [阶段6-上下文投影与长期状态.md](stage-6/) | 事实怎样变成模型可见的有限上下文 |
-| 7 | [阶段7-CLI-Dashboard与扩展.md](stage-7/) | CLI、Dashboard、Goal Mode、Capability 怎样复用内核 |
-| 8 | [阶段8-工程化测试与恢复.md](stage-8/) | 测试、导入边界、journal、失败恢复与故障排查 |
-| 9 | [阶段9-毕业设计.md](stage-9/) | 设计一个可验证的新 Capability 并完成恢复演练 |
+| 0 | [环境与源码地图](../stage-0/) | 版本、目录、六层状态和最小阅读实验 |
+| 1 | [对象模型与控制面](../stage-1/) | Goal、Todo、Claim、Gate、Run、投影各自拥有什么 |
+| 2 | [ShouldRun 与 Quota](../stage-2/) | 为什么现在能跑/不能跑，false 的不同恢复路径 |
+| 3 | [Turn 计划与事务](../stage-3/) | Turn Envelope、turn_key 与七阶段合同 |
+| 4 | [Capability、Provider 与 Host](../stage-4/) | 领域能力、Provider 生命周期、Host 请求/结果 |
+| 5 | [验证、写回、配额与调度](../stage-5/) | 结果分类、写回顺序、spend、apply/ack、closeout |
+| 6 | [上下文投影与长期状态](../stage-6/) | 事实怎样变成模型可见的有限上下文 |
+| 7 | [CLI、Dashboard 与扩展](../stage-7/) | CLI、Dashboard、Goal Mode、Capability 怎样复用内核 |
+| 8 | [工程化、测试与恢复](../stage-8/) | 测试、导入边界、journal、失败恢复与故障排查 |
+| 9 | [毕业设计](../stage-9/) | 设计一个可验证的新 Capability 并完成恢复演练 |
 
 ## 贯穿全课的三个判断
 

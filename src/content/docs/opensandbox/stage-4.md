@@ -472,7 +472,7 @@ docker ps --format '{{.ID}}\t{{.Image}}\t{{.Ports}}\t{{.Names}}'
 docker inspect <container-id>
 ```
 
-观察三件事：镜像是不是你请求的那个、端口映射落在 `port_range` 内、容器的网络模式是 `host` 还是 `bridge`。这一步的目的不是背字段，而是建立“API 之下确实有一个具体对象”的直觉。
+观察三件事：镜像是不是你请求的那个、端口映射落在 `docker.port_range_min`～`docker.port_range_max` 内、容器的网络模式是 `host` 还是 `bridge`。这一步的目的不是背字段，而是建立“API 之下确实有一个具体对象”的直觉。
 
 ### 实验 D2 · 制造一次能力条件失败
 

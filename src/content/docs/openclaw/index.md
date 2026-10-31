@@ -65,10 +65,10 @@ description: "OpenClaw 2026.10.9 源码课导读：Gateway、Session/Run、七�
 
 | 顺序 | 文档 | 你会得到什么 |
 | --- | --- | --- |
-| 0 | `00-全局地图.md` | 产品定位、进程拓扑、核心对象、目录职责、信任边界 |
-| 1 | `01-一条消息的一生.md` | 从渠道/`chat.send` 到 Agent Loop、工具、transcript 和回复的完整主线 |
-| 2 | `02-核心机制.md` | 循环、上下文、工具审批、模型/harness、插件/MCP/Skills、Gateway 协议 |
-| 3 | `03-工程实战.md` | 调试路径、源码实验、失败矩阵、扩展练习和工程关卡 |
+| 0 | [全局地图](overview/) | 产品定位、进程拓扑、核心对象、目录职责、信任边界 |
+| 1 | [一条消息的一生](message-lifecycle/) | 从渠道/`chat.send` 到 Agent Loop、工具、transcript 和回复的完整主线 |
+| 2 | [核心机制](core-mechanisms/) | 循环、上下文、工具审批、模型/harness、插件/MCP/Skills、Gateway 协议 |
+| 3 | [工程实战](engineering/) | 调试路径、源码实验、失败矩阵、扩展练习和工程关卡 |
 
 ## 阶段课（源码深入）
 

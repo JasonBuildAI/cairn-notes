@@ -45,7 +45,7 @@ rg -n "requires-python|version =" pyproject.toml
 - `pyproject.toml` 的 `version = "0.0.0"` 是构建占位，不是产品版本；
 - `hermes_cli/__init__.py` 的 `__release_date__` 是发布线索；
 - 发布归档没有 `.git`，不要虚构 commit/tag；
-- 旧 `hermes-0.22.2`、`archive/legacy-0.22.2/` 只能做历史对照。
+- 旧 `hermes-0.22.2` 讲义只能做历史对照（本站只保留 v0.22.5）。
 
 ### 1.2 Windows 安装链
 

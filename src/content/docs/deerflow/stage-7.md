@@ -5,7 +5,7 @@ description: "阶段 7：扩展渠道与多 Agent。沿源码主线理解事实�
 
 > 课程：DeerFlow 源码课 · 阶段卷
 > 前置：阶段 1、2、6
-> 对应总览：`02-核心机制.md`、`03-工程实战.md`
+> 对应总览：`core-mechanisms.md`、`engineering.md`
 > 本阶段目标：理解为什么所有新入口都应复用 `start_run`，以及子 Agent 为什么不是第二个 Gateway。
 
 ## 1. 本阶段解决什么

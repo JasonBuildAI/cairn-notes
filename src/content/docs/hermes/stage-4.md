@@ -5,7 +5,7 @@ description: "阶段 4：工具与 Persist Before Execute。沿源码主线理�
 
 > 课程：Hermes Agent 源码课 · 阶段卷
 > 前置：阶段 2、3
-> 对应总览：`01-一次Turn的一生.md` 第 9 节，`02-核心机制.md` 第 3 节
+> 对应总览：`turn-lifecycle.md` 第 9 节，`core-mechanisms.md` 第 3 节
 > 本阶段目标：从模型的 tool call 追到可见工具表、持久化边界、执行器、结果回填与失败终止。
 
 ## 1. 本阶段解决什么

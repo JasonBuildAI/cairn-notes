@@ -5,7 +5,7 @@ description: "阶段 6：上下文投影与长期状态。沿源码主线理解�
 
 > 课程：LoopX 源码课 · 阶段卷
 > 前置：阶段 5，理解写回、消费与调度
-> 对应总览：`02-核心机制.md` 的上下文与状态部分
+> 对应总览：`core-mechanisms.md` 的上下文与状态部分
 > 本阶段目标：区分 canonical facts、read models 与 Host context，理解 refresh/frontier 的作用。
 
 ## 1. 本阶段解决什么

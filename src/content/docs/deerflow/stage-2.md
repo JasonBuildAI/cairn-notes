@@ -5,7 +5,7 @@ description: "阶段 2：Agent 装配与 LangGraph 循环。沿源码主线理�
 
 > 课程：DeerFlow 源码课 · 阶段卷
 > 前置：阶段 1，了解 LangGraph 的 graph/checkpoint
-> 对应总览：`01-一次Run的一生.md`、`02-核心机制.md`
+> 对应总览：`run-lifecycle.md`、`core-mechanisms.md`
 > 本阶段目标：从 `make_lead_agent()` 一路追到模型调用与工具轮次。
 
 ## 1. 本阶段解决什么

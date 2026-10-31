@@ -5,7 +5,7 @@ description: "阶段 2：Conversation Loop。沿源码主线理解事实、合�
 
 > 课程：Hermes Agent 源码课 · 阶段卷
 > 前置：阶段 1
-> 对应总览：`01-一次Turn的一生.md` 第 7～9 节
+> 对应总览：`turn-lifecycle.md` 第 7～9 节
 > 本阶段目标：把“一次模型调用”扩成“一轮可停止、可重试、可执行工具的同步 turn”。
 
 ## 1. 本阶段解决什么
@@ -118,7 +118,7 @@ TurnFacade.run_conversation
 
 ## 8. 通关自测
 
-1. `TurnFacade` 和 `conversation_loop` 的职责怎样分？
+1. `TurnFacadeMixin`（`agent/turn_facade.py`）和 `conversation_loop` 的职责怎样分？
 2. 为什么每轮都要重新经过 preflight，而不是只在 turn 开始时做一次？
 3. `action=break` 与 `action=return` 的差别是什么？
 4. 工具调用为什么会让 `api_call_count` 增加？
@@ -127,7 +127,7 @@ TurnFacade.run_conversation
 
 ### 参考答案
 
-1. `TurnFacade` 管租约、外层作用域、后台 review 互斥和 finally 清理；`conversation_loop` 管本轮上下文、API 重试、工具轮次与 finalize，是同步执行核心。
+1. `TurnFacadeMixin` 管租约、外层作用域、后台 review 互斥和 finally 清理；`conversation_loop` 管本轮上下文、API 重试、工具轮次与 finalize，是同步执行核心。
 2. 因为工具结果、压缩和 fallback 都会改变请求大小或 provider 上下文窗口；每次真正发请求前都要重新判断能否 fit。
 3. `return` 直接携带一个完整 result 结束；`break` 只退出当前循环/重试环，后面仍要交 finalizer 或进入下一阶段统一收尾。
 4. 模型返回 tool calls 后，Hermes 执行工具并把这些消息写回历史，再发起下一次模型请求；每次模型请求都计一次 API call。

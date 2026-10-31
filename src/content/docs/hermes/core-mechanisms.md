@@ -5,7 +5,7 @@ description: "梳理同步循环、上下文压缩、工具执行、凭据池、
 
 > 基线：`hermes-agent-0.22.5` 发布归档，`hermes_cli/__init__.py` 的 `__release_date__ = "2026.9.24"`。归档不含 `.git`，所以本文不虚构 tag/commit；`pyproject.toml` 里的 `version = "0.0.0"` 是构建占位，不是发布版本。
 > 本文所有源码路径都相对 `$HERMES_SRC`。
-> 先读 `00-全局地图.md` 和 `01-一次Turn的一生.md`，再看这一篇。
+> 先读 `overview.md` 和 `turn-lifecycle.md`，再看这一篇。
 
 ## 0. 一页总模型
 

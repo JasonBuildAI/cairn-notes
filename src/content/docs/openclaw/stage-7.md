@@ -5,7 +5,7 @@ description: "阶段 7：插件、渠道、协议与 UI。沿源码主线理解�
 
 > 课程：OpenClaw 源码课 · 阶段卷
 > 前置：阶段 1～6
-> 对应总览：`02-核心机制.md` 的扩展与界面部分
+> 对应总览：`core-mechanisms.md` 的扩展与界面部分
 > 本阶段目标：理解 Plugin、MCP、Skills、渠道、Gateway 事件、UI 与子 Agent 各自扩展什么，不扩展什么。
 
 ## 1. 本阶段解决什么

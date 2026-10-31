@@ -32,10 +32,10 @@ description: "十个源码阶段的阅读顺序、阶段地图、建议节奏与
 
 | 材料 | 适合回答 |
 | --- | --- |
-| `00-全局地图.md` | 产品定位、进程拓扑、目录与术语 |
-| `01-一次Turn的一生.md` | 先得到完整生命周期直觉 |
-| `02-核心机制.md` | 按上下文、工具、模型、持久化等主题补齐 |
-| `03-工程实战.md` | 排障、修改配方、失败矩阵 |
+| `overview.md` | 产品定位、进程拓扑、目录与术语 |
+| `turn-lifecycle.md` | 先得到完整生命周期直觉 |
+| `core-mechanisms.md` | 按上下文、工具、模型、持久化等主题补齐 |
+| `engineering.md` | 排障、修改配方、失败矩阵 |
 | 本卷阶段 0～9 | 沿源码逐段建立所有权、状态迁移与恢复因果关系 |
 
 ## 每篇固定追问
@@ -49,16 +49,16 @@ description: "十个源码阶段的阅读顺序、阶段地图、建议节奏与
 
 | 阶段 | 主题 | 完成后应能解释 |
 | --- | --- | --- |
-| 0 | [环境与源码地图](stage-0/) | 三种宿主、四个边界、核心目录 |
-| 1 | [前端 Admission 与 Lease](stage-1/) | 输入怎样变成单写者的 durable turn |
-| 2 | [ConversationLoop](stage-2/) | 一轮循环怎样推进与退出 |
-| 3 | [Prompt、上下文与压缩](stage-3/) | 模型实际看到什么，压缩改变了什么 |
-| 4 | [工具与 PersistBeforeExecute](stage-4/) | 工具调用的持久化边界与副作用 |
-| 5 | [Provider、凭据与 Fallback](stage-5/) | 为什么换模型必须重建上下文 |
-| 6 | [SessionDB 与恢复](stage-6/) | transcript、schema、锁与重启恢复 |
-| 7 | [扩展平台与多 Agent](stage-7/) | plugin、cron、delegate、渠道各扩展哪层 |
-| 8 | [工程化测试与排障](stage-8/) | 用证据定位故障层 |
-| 9 | [毕业设计](stage-9/) | 完成一个可恢复、可审计的改造 |
+| 0 | [环境与源码地图](../stage-0/) | 三种宿主、四个边界、核心目录 |
+| 1 | [前端 Admission 与 Lease](../stage-1/) | 输入怎样变成单写者的 durable turn |
+| 2 | [ConversationLoop](../stage-2/) | 一轮循环怎样推进与退出 |
+| 3 | [Prompt、上下文与压缩](../stage-3/) | 模型实际看到什么，压缩改变了什么 |
+| 4 | [工具与 PersistBeforeExecute](../stage-4/) | 工具调用的持久化边界与副作用 |
+| 5 | [Provider、凭据与 Fallback](../stage-5/) | 为什么换模型必须重建上下文 |
+| 6 | [SessionDB 与恢复](../stage-6/) | transcript、schema、锁与重启恢复 |
+| 7 | [扩展平台与多 Agent](../stage-7/) | plugin、cron、delegate、渠道各扩展哪层 |
+| 8 | [工程化测试与排障](../stage-8/) | 用证据定位故障层 |
+| 9 | [毕业设计](../stage-9/) | 完成一个可恢复、可审计的改造 |
 
 ## 建议节奏
 
