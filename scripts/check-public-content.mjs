@@ -65,7 +65,33 @@ if (!fs.existsSync(docsRoot)) {
 inspectDocs(docsRoot);
 walk(root);
 
-const expected = ['pi/index.md', 'opensandbox/index.md', 'rights.md', 'about.md'];
+const expected = [
+	'pi/index.md',
+	'opensandbox/index.md',
+	'engineering/index.md',
+	'engineering/computer-systems.md',
+	'engineering/reproducible-environment.md',
+	'engineering/git-and-debugging.md',
+	'engineering/browser-model.md',
+	'engineering/frontend-for-ai.md',
+	'engineering/backend-requests.md',
+	'engineering/backend-scale.md',
+	'engineering/backend-structure.md',
+	'engineering/data-storage.md',
+	'engineering/data-products.md',
+	'engineering/architecture-reliability.md',
+	'engineering/system-design.md',
+	'engineering/linux-containers-deploy.md',
+	'engineering/network-cloud-security.md',
+	'engineering/observability-incidents.md',
+	'engineering/llm-foundations.md',
+	'engineering/rag-and-agents.md',
+	'engineering/model-lifecycle.md',
+	'engineering/code-testing-design.md',
+	'engineering/security-and-delivery.md',
+	'rights.md',
+	'about.md',
+];
 for (const file of expected) {
 	if (!fs.existsSync(path.join(docsRoot, file))) errors.push(`缺少必要页面：src/content/docs/${file}`);
 }

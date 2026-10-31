@@ -1,47 +1,63 @@
 ---
 title: 来源与版权
-description: Cairn Notes 的内容许可、上游项目归属、源码分发边界与纠错方式。
+description: Cairn Notes 的内容许可、上游项目归属、AI 工程基础的改写范围与纠错方式。
 ---
 
 ## 许可范围
 
-| 对象 | 许可 | 说明 |
-| --- | --- | --- |
-| 学习笔记、原创文字与图表 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | 允许分享与改编，需署名并以相同方式共享。 |
-| 站点代码、构建脚本与配置 | [MIT](https://github.com/JasonBuildAI/cairn-notes/blob/main/LICENSE) | 可自由使用、修改与分发，保留版权与许可声明。 |
-| 上游项目源码与名称 | 各自许可 | 本站不重新授权，也不代表上游项目。 |
+- **Pi、OpenSandbox 学习笔记**：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。允许分享与改编，需署名并以相同方式共享。
+- **AI 工程基础（`engineering/`）**：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)。改编自 EasyVibe，允许非商业分享与改编，需署名并以相同方式共享。
+- **站点代码、构建脚本与配置**：[MIT](https://github.com/JasonBuildAI/cairn-notes/blob/main/LICENSE)。可自由使用、修改与分发，保留版权与许可声明。
+- **上游项目源码、名称与素材**：各自许可。本站不重新授权，也不代表上游项目。
 
-建议引用格式：
-
-> Cairn Notes，《页面标题》，<https://jasonbuildai.github.io/cairn-notes/>，CC BY-SA 4.0。
+如果把整站内容一起转载，必须同时满足两种 CC 许可；其中 AI 工程基础不能用于商业用途。不要把整站笼统标成一个许可证。
 
 ## 上游项目
 
-这两套笔记分别基于以下开源项目整理。版本与提交固定，便于核查：
+### Pi
 
-| 项目 | 学习版本 | 提交 | 上游许可 | 官方来源 |
-| --- | --- | --- | --- | --- |
-| Pi | v1.3.0 | `71023aec` | MIT | <https://github.com/earendil-works/pi> |
-| OpenSandbox | release-1.1.1 | `531700ca` | Apache-2.0 | <https://github.com/opensandbox-group/OpenSandbox> |
+- 学习版本：v1.3.0，`71023aec`
+- 上游许可：MIT
+- 来源：<https://github.com/earendil-works/pi>
+
+### OpenSandbox
+
+- 学习版本：release-1.1.1，`531700ca`
+- 上游许可：Apache-2.0
+- 来源：<https://github.com/opensandbox-group/OpenSandbox>
+
+### EasyVibe
+
+- 核对版本：`main`，`f2239c67`（2026-10-22）
+- 上游许可：CC BY-NC-SA 4.0
+- 来源：<https://github.com/DatawhaleChina/easy-vibe>
+
+EasyVibe 的许可声明写在其上游 README 中。AI 工程基础对应其附录第一至第九章的 104 个 Markdown 文件，但不是逐篇翻译或转载。第一章高度压缩；其余章节按 AI 研发工程师的实际需要合并、删减、重排和补充，并改写为静态表格、ASCII 流程图、短示例和检查表。
+
+本站没有复制上游图片、动画、交互组件或完整课程页面。示例和表格由笔记需要重新整理。若发现归属或引用边界有问题，请通过 Issue 联系，我会核实后修正或移除。
 
 相关完整许可文本位于仓库的 [`LICENSES/`](https://github.com/JasonBuildAI/cairn-notes/tree/main/LICENSES) 目录。Cairn Notes 与上述项目的维护者没有隶属或背书关系。
 
+## 引用方式
+
+引用 Pi 或 OpenSandbox 笔记时，建议写成：
+
+> Cairn Notes，《页面标题》，<https://jasonbuildai.github.io/cairn-notes/>，CC BY-SA 4.0。
+
+引用 AI 工程基础时，建议写成：
+
+> Cairn Notes，《页面标题》，adapted from EasyVibe by Datawhale / EasyVibe contributors，CC BY-NC-SA 4.0，有修改。
+
 ## 为什么没有上传源码
 
-Cairn Notes 只发布学习笔记、架构分析与短代码示例。公开仓库不包含：
+公开仓库不包含：
 
 - 上游仓库的完整源码或 `.git` 目录；
 - 官方 release 压缩包；
-- 本地环境快照、私有配置或凭据；
-- 可能受第三方条款约束的素材。
+- 上游图片、动画和交互组件；
+- 本地环境快照、私有配置或凭据。
 
-如果你要运行实验，请从官方仓库检出上表对应的版本。笔记中的 `$PI_SRC`、`$OSB_SRC` 等写法只表示读者自己的本地源码目录。
-
-## 引用与代码示例
-
-笔记中的少量代码片段用于说明 API 用法、调用链或失败边界。原创示例随笔记按 CC BY-SA 4.0 提供；若片段来自上游项目，其版权与许可仍归原作者，并受相应上游许可约束。
-
-上游名称、商标和产品标识仅用于说明来源与讨论技术问题。本站不声称获得任何官方认证。
+如果你要运行实验，请从官方仓库检出上面列出的对应版本。笔记中的 `$PI_SRC`、`$OSB_SRC` 等写法只表示读者自己的本地目录。
 
 ## 纠错与下架
 

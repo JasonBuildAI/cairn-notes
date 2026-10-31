@@ -164,6 +164,14 @@ header.header {
 	.sl-markdown-content h2 {
 		margin-top: 2.2rem;
 	}
+
+	.sl-markdown-content table :is(th, td):first-child {
+		min-width: 5.5rem;
+	}
+
+	.expressive-code pre {
+		font-size: 0.8rem;
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {

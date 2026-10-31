@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "我学习 AI Agent 时整理的笔记，主要包括 Pi 和 OpenSandbox。",
+  "description": "我学习 AI Agent 时整理的笔记，包括 Pi、OpenSandbox 和基于 EasyVibe 重写的 AI 工程基础。",
   "license": "MIT",
   "homepage": "https://jasonbuildai.github.io/cairn-notes/",
   "engines": {
