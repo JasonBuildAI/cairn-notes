@@ -100,6 +100,7 @@ export default defineConfig({
 					label: '工程基础',
 					items: [
 						{ label: '学习说明', slug: 'engineering' },
+						{ label: '工程全景与实例', slug: 'engineering/end-to-end' },
 						{ label: '计算机系统一页通', slug: 'engineering/computer-systems' },
 						{
 							label: '开发环境与工具',

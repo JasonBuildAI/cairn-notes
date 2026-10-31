@@ -8,7 +8,7 @@
 
 - [Pi 1.3.0](https://jasonbuildai.github.io/cairn-notes/pi/)：模型调用、Agent 循环、上下文、工具与扩展，共 13 篇。
 - [OpenSandbox 1.1.1](https://jasonbuildai.github.io/cairn-notes/opensandbox/)：沙箱生命周期、运行时、执行、网络与安全边界，共 14 篇。
-- [工程基础](https://jasonbuildai.github.io/cairn-notes/engineering/)：从计算机系统、前后端、数据和部署，到模型、检索与 Agent，共 20 篇正文。
+- [工程基础](https://jasonbuildai.github.io/cairn-notes/engineering/)：从计算机系统、前后端、数据和部署，到模型、检索与 Agent，共 21 篇正文。
 
 ## 说明
 

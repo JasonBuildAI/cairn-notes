@@ -52,7 +52,7 @@ Cairn Notes discusses OpenSandbox's architecture and includes short API usage ex
 
 The pages under `src/content/docs/engineering/` are an independent adaptation of EasyVibe's appendix chapters 1 through 9, covering 104 upstream Markdown files at the reviewed revision. Chapter 1 was condensed into one overview page. The remaining material was merged, reorganized, supplemented, and rewritten along a general software engineering path. Model, retrieval, and agent systems are treated as a specialized engineering chapter rather than a separate set of principles.
 
-Interactive demos, animations, product surveys and repeated command tutorials were removed. Static tables, ASCII diagrams and new examples were written for these notes. No upstream images, animations, interactive components or complete course pages are redistributed here.
+Interactive demos, animations, product surveys and repeated command tutorials were removed. Static tables, ASCII diagrams and new examples were written for these notes. A later overview page, "From Requirements to Reliable Operation," synthesizes the notes with an original running example. No upstream images, animations, interactive components or complete course pages are redistributed here.
 
 Recommended attribution:
 
