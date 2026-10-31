@@ -36,9 +36,6 @@ export default defineConfig({
 					href: 'https://github.com/JasonBuildAI/cairn-notes',
 				},
 			],
-			editLink: {
-				baseUrl: 'https://github.com/JasonBuildAI/cairn-notes/edit/main/',
-			},
 			customCss: ['./src/styles/custom.css'],
 			head: [
 				{ tag: 'meta', attrs: { name: 'theme-color', content: '#203029' } },
@@ -102,7 +99,7 @@ export default defineConfig({
 				{
 					label: '关于本站',
 					items: [
-						{ label: '为什么做 Cairn Notes', slug: 'about' },
+						{ label: '关于这里', slug: 'about' },
 						{ label: '来源与版权', slug: 'rights' },
 					],
 				},

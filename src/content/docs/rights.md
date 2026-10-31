@@ -46,3 +46,5 @@ Cairn Notes 只发布学习笔记、架构分析与短代码示例。公开仓�
 ## 纠错与下架
 
 如果发现事实错误、版本漂移、遗漏署名，或认为某段内容超出了合理引用范围，请通过 [GitHub Issues](https://github.com/JasonBuildAI/cairn-notes/issues) 联系。我会先核实，再修正、补充署名或移除相关内容。
+
+这个仓库只处理 Issue，不接受 Pull Request。
