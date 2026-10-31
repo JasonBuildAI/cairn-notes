@@ -9,13 +9,13 @@ Cairn Notes is an independent personal learning archive maintained by JasonBuild
 | Material | License |
 | --- | --- |
 | Pi and OpenSandbox learning notes | CC BY-SA 4.0 |
-| AI engineering notes under `src/content/docs/engineering/` | CC BY-NC-SA 4.0 |
+| Engineering notes under `src/content/docs/engineering/` | CC BY-NC-SA 4.0 |
 | Website code, build scripts and configuration | MIT |
 | Third-party source code, documentation, names and trademarks | Their respective licenses |
 
 See [CONTENT-LICENSE.md](CONTENT-LICENSE.md) and [LICENSE](LICENSE).
 
-The repository contains content under both CC BY-SA 4.0 and CC BY-NC-SA 4.0. A redistribution of the complete content set must satisfy both licenses. In particular, the AI engineering notes must not be used commercially without separate permission from the relevant rights holders.
+The repository contains content under both CC BY-SA 4.0 and CC BY-NC-SA 4.0. A redistribution of the complete content set must satisfy both licenses. In particular, the engineering notes must not be used commercially without separate permission from the relevant rights holders.
 
 ## Upstream projects
 
@@ -50,7 +50,7 @@ Cairn Notes discusses OpenSandbox's architecture and includes short API usage ex
 - License details: <https://creativecommons.org/licenses/by-nc-sa/4.0/>
 - Local license text: [LICENSES/CC-BY-NC-SA-4.0.txt](LICENSES/CC-BY-NC-SA-4.0.txt)
 
-The pages under `src/content/docs/engineering/` are an independent adaptation of EasyVibe's appendix chapters 1 through 9, covering 104 upstream Markdown files at the reviewed revision. Chapter 1 was heavily condensed into one overview page. The remaining chapters were substantially shortened, merged, reorganized, supplemented, and rewritten for an AI engineering audience.
+The pages under `src/content/docs/engineering/` are an independent adaptation of EasyVibe's appendix chapters 1 through 9, covering 104 upstream Markdown files at the reviewed revision. Chapter 1 was condensed into one overview page. The remaining material was merged, reorganized, supplemented, and rewritten along a general software engineering path. Model, retrieval, and agent systems are treated as a specialized engineering chapter rather than a separate set of principles.
 
 Interactive demos, animations, product surveys and repeated command tutorials were removed. Static tables, ASCII diagrams and new examples were written for these notes. No upstream images, animations, interactive components or complete course pages are redistributed here.
 

@@ -19,7 +19,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Cairn Notes',
-			description: '我学习 AI Agent 时整理的笔记，包括 Pi、OpenSandbox 和基于 EasyVibe 重写的 AI 工程基础。',
+			description: '我学习 AI Agent 时整理的笔记，包括 Pi、OpenSandbox 和通用软件工程基础。',
 			logo: {
 				src: './src/assets/cairn-mark.svg',
 				alt: 'Cairn Notes',
@@ -97,7 +97,7 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'AI 工程基础',
+					label: '工程基础',
 					items: [
 						{ label: '学习说明', slug: 'engineering' },
 						{ label: '计算机系统一页通', slug: 'engineering/computer-systems' },
@@ -112,7 +112,7 @@ export default defineConfig({
 							label: '浏览器与前端',
 							items: [
 								{ label: '浏览器运行模型', slug: 'engineering/browser-model' },
-								{ label: 'AI 应用前端', slug: 'engineering/frontend-for-ai' },
+								{ label: '前端工程与应用设计', slug: 'engineering/frontend-for-ai' },
 							],
 						},
 						{
@@ -146,7 +146,7 @@ export default defineConfig({
 							],
 						},
 						{
-							label: '人工智能',
+							label: '模型系统',
 							items: [
 								{ label: '大模型与多模态', slug: 'engineering/llm-foundations' },
 								{ label: 'RAG 与 Agent', slug: 'engineering/rag-and-agents' },

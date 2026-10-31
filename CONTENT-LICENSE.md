@@ -12,7 +12,7 @@ Cairn Notes 不是统一许可的项目，内容按来源分为三部分。
 - 完整法律文本：[LICENSES/CC-BY-SA-4.0.txt](LICENSES/CC-BY-SA-4.0.txt)
 - 你可以复制、分发、改编，但必须署名、附上许可链接、注明是否修改，并以相同方式共享。
 
-## AI 工程基础
+## 工程基础
 
 `src/content/docs/engineering/` 是对 [EasyVibe](https://github.com/DatawhaleChina/easy-vibe) 附录第一章至第九章的独立改写，采用 **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International（CC BY-NC-SA 4.0）**。
 
@@ -20,7 +20,7 @@ Cairn Notes 不是统一许可的项目，内容按来源分为三部分。
 - 完整法律文本：[LICENSES/CC-BY-NC-SA-4.0.txt](LICENSES/CC-BY-NC-SA-4.0.txt)
 - 上游版本：`f2239c67`（2026-10-22）
 - 上游权利方：Datawhale / EasyVibe contributors
-- 修改说明：第一章高度压缩；其余章节合并、删减、重排、补充并按 AI 研发场景重写；未复制上游图片、动画、交互组件或完整课程。
+- 修改说明：第一章高度压缩；其余章节按通用软件工程的学习路径合并、删减、重排和补充，模型系统作为专门章节处理；未复制上游图片、动画、交互组件或完整课程。
 
 你可以非商业地复制、分发和改编，但必须署名、附上许可链接、注明修改，并以相同方式共享。商业使用需要另行获得相关权利人的许可。
 
@@ -34,7 +34,7 @@ Cairn Notes 不是统一许可的项目，内容按来源分为三部分。
 
 > Cairn Notes by JasonBuildAI, licensed under CC BY-SA 4.0.
 >
-> AI engineering notes adapted from EasyVibe by Datawhale / EasyVibe contributors, CC BY-NC-SA 4.0, changes made.
+> Engineering notes adapted from EasyVibe by Datawhale / EasyVibe contributors, CC BY-NC-SA 4.0, changes made.
 >
 > Source: https://github.com/JasonBuildAI/cairn-notes
 

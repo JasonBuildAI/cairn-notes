@@ -1,7 +1,7 @@
 {
   "name": "Cairn Notes",
   "short_name": "Cairn",
-  "description": "我学习 AI Agent 时整理的 Pi、OpenSandbox 与 AI 工程笔记。",
+  "description": "我学习 AI Agent 时整理的 Pi、OpenSandbox 与通用工程笔记。",
   "lang": "zh-CN",
   "start_url": "/cairn-notes/",
   "scope": "/cairn-notes/",
