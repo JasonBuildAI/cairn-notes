@@ -1,11 +1,11 @@
 ---
 title: 来源与版权
-description: Cairn Notes 的内容许可、上游项目归属、工程基础的改写范围与纠错方式。
+description: Cairn Notes 的内容许可、上游项目归属、四套源码课与工程基础的改写范围与纠错方式。
 ---
 
 ## 许可范围
 
-- **Pi、OpenSandbox 学习笔记**：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。允许分享与改编，需署名并以相同方式共享。
+- **Pi、OpenSandbox 与四套源码课学习笔记**：[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。允许分享与改编，需署名并以相同方式共享。
 - **工程基础（`engineering/`）**：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)。改编自 EasyVibe，允许非商业分享与改编，需署名并以相同方式共享。
 - **站点代码、构建脚本与配置**：[MIT](https://github.com/JasonBuildAI/cairn-notes/blob/main/LICENSE)。可自由使用、修改与分发，保留版权与许可声明。
 - **上游项目源码、名称与素材**：各自许可。本站不重新授权，也不代表上游项目。
@@ -26,6 +26,30 @@ description: Cairn Notes 的内容许可、上游项目归属、工程基础的�
 - 上游许可：Apache-2.0
 - 来源：<https://github.com/opensandbox-group/OpenSandbox>
 
+### DeerFlow
+
+- 学习版本：v2.1.0，`345f08be`
+- 上游许可：MIT
+- 来源：<https://github.com/bytedance/deer-flow>
+
+### LoopX
+
+- 学习版本：v2.1.1，`87e5b4f8`
+- 上游许可：Apache-2.0
+- 来源：<https://github.com/loopx-project/loopx>
+
+### OpenClaw
+
+- 学习版本：2026.10.9 发布归档
+- 上游许可：MIT
+- 来源：<https://github.com/openclaw/openclaw>
+
+### Hermes Agent
+
+- 学习版本：v0.22.5 发布归档
+- 上游许可：MIT
+- 来源：<https://github.com/NousResearch/Hermes-Agent>
+
 ### EasyVibe
 
 - 核对版本：`main`，`f2239c67`（2026-10-22）
@@ -40,7 +64,7 @@ EasyVibe 的许可声明写在其上游 README 中。工程基础对应其附录
 
 ## 引用方式
 
-引用 Pi 或 OpenSandbox 笔记时，建议写成：
+引用 Pi、OpenSandbox 或四套源码课笔记时，建议写成：
 
 > Cairn Notes，《页面标题》，<https://jasonbuildai.github.io/cairn-notes/>，CC BY-SA 4.0。
 
@@ -57,7 +81,7 @@ EasyVibe 的许可声明写在其上游 README 中。工程基础对应其附录
 - 上游图片、动画和交互组件；
 - 本地环境快照、私有配置或凭据。
 
-如果你要运行实验，请从官方仓库检出上面列出的对应版本。笔记中的 `$PI_SRC`、`$OSB_SRC` 等写法只表示读者自己的本地目录。
+如果你要运行实验，请从官方仓库检出上面列出的对应版本。笔记中的 `$PI_SRC`、`$OSB_SRC`、`$DEERFLOW_SRC`、`$LOOPX_SRC`、`$OPENCLAW_SRC`、`$HERMES_SRC` 等写法只表示读者自己的本地目录。
 
 ## 纠错与下架
 

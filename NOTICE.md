@@ -40,6 +40,50 @@ Cairn Notes discusses Pi's architecture and includes short API usage examples an
 
 Cairn Notes discusses OpenSandbox's architecture and includes short API usage examples and commentary. No complete OpenSandbox source tree, release archive, or `.git` directory is redistributed in this repository.
 
+### DeerFlow
+
+- Upstream: <https://github.com/bytedance/deer-flow>
+- Learned version: v2.1.0
+- Commit: `345f08be00c8a9495079b732a39b46aa9af1584e`
+- Upstream license: MIT
+- Copyright: Copyright (c) 2025 Bytedance Ltd. and/or its affiliates; Copyright (c) 2025-2026 DeerFlow Authors
+- Full text: [LICENSES/DEERFLOW-MIT.txt](LICENSES/DEERFLOW-MIT.txt)
+
+Cairn Notes discusses DeerFlow's architecture and includes short excerpts and commentary. No complete DeerFlow source tree, release archive, or `.git` directory is redistributed in this repository.
+
+### LoopX
+
+- Upstream: <https://github.com/loopx-project/loopx>
+- Learned version: v2.1.1
+- Commit: `87e5b4f88d207adf062eea57002cda6fe04fd535`
+- Upstream license: Apache License 2.0
+- Copyright: Copyright 2026 LoopX contributors
+- Full text: [LICENSES/LOOPX-APACHE-2.0.txt](LICENSES/LOOPX-APACHE-2.0.txt)
+
+Cairn Notes discusses LoopX's control-plane architecture and includes short excerpts and commentary. No complete LoopX source tree, release archive, or `.git` directory is redistributed in this repository.
+
+### OpenClaw
+
+- Upstream: <https://github.com/openclaw/openclaw>
+- Learned version: 2026.10.9 release archive
+- Commit or tag: not available in the release archive
+- Upstream license: MIT
+- Copyright: Copyright (c) 2026 OpenClaw Foundation
+- Full text: [LICENSES/OPENCLAW-MIT.txt](LICENSES/OPENCLAW-MIT.txt)
+
+Cairn Notes discusses OpenClaw's architecture and includes short excerpts and commentary. No complete OpenClaw source tree, release archive, or `.git` directory is redistributed in this repository.
+
+### Hermes Agent
+
+- Upstream: <https://github.com/NousResearch/Hermes-Agent>
+- Learned version: v0.22.5 release archive
+- Commit or tag: not available in the release archive
+- Upstream license: MIT
+- Copyright: Copyright (c) 2025 Nous Research
+- Full text: [LICENSES/HERMES-MIT.txt](LICENSES/HERMES-MIT.txt)
+
+Cairn Notes discusses Hermes Agent's architecture and includes short excerpts and commentary. No complete Hermes Agent source tree, release archive, or `.git` directory is redistributed in this repository.
+
 ### EasyVibe
 
 - Upstream: <https://github.com/DatawhaleChina/easy-vibe>

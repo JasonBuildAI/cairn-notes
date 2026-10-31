@@ -12,6 +12,63 @@ const stages = (prefix, labels) =>
 		slug: `${prefix}/stage-${index}`,
 	}));
 
+const courses = [
+	{
+		label: 'DeerFlow 2.1',
+		prefix: 'deerflow',
+		overviews: [
+			{ label: '全局地图', slug: 'overview' },
+			{ label: '一次 Run 的一生', slug: 'run-lifecycle' },
+			{ label: '核心机制', slug: 'core-mechanisms' },
+			{ label: '工程实战', slug: 'engineering' },
+		],
+		stages: ['环境与源码地图', '入口与 Run 生命周期', 'Agent 装配与 LangGraph 循环', '上下文与记忆', '工具与 Sandbox', '模型接入与 Provider 适配', '持久化与恢复', '扩展渠道与多 Agent', '工程化与故障排查', '毕业设计'],
+	},
+	{
+		label: 'LoopX 2.1.1',
+		prefix: 'loopx',
+		overviews: [
+			{ label: '全局地图', slug: 'overview' },
+			{ label: '一次 Turn 的一生', slug: 'turn-lifecycle' },
+			{ label: '核心机制', slug: 'core-mechanisms' },
+			{ label: '工程实战', slug: 'engineering' },
+		],
+		stages: ['环境与源码地图', '对象模型与控制面', 'ShouldRun 与 Quota', 'Turn 计划与事务', 'Capability、Provider 与 Host', '验证、写回、配额与调度', '上下文投影与长期状态', 'CLI、Dashboard 与扩展', '工程化、测试与恢复', '毕业设计'],
+	},
+	{
+		label: 'OpenClaw 2026.10.9',
+		prefix: 'openclaw',
+		overviews: [
+			{ label: '全局地图', slug: 'overview' },
+			{ label: '一条消息的一生', slug: 'message-lifecycle' },
+			{ label: '核心机制', slug: 'core-mechanisms' },
+			{ label: '工程实战', slug: 'engineering' },
+		],
+		stages: ['环境与源码地图', 'Gateway、Session 与 Run', '入口与 Agent Loop', '上下文压缩与 Pruning', '工具审批与 Sandbox', '模型认证、Fallback 与 Harness', 'Session、Transcript 与 Writer', '插件、渠道、协议与 UI', '工程化、测试与运维', '毕业设计'],
+	},
+	{
+		label: 'Hermes Agent 0.22.5',
+		prefix: 'hermes',
+		overviews: [
+			{ label: '全局地图', slug: 'overview' },
+			{ label: '一次 Turn 的一生', slug: 'turn-lifecycle' },
+			{ label: '核心机制', slug: 'core-mechanisms' },
+			{ label: '工程实战', slug: 'engineering' },
+		],
+		stages: ['环境与源码地图', '前端 Admission 与 Lease', 'Conversation Loop', 'Prompt、上下文与压缩', '工具与 Persist Before Execute', 'Provider、凭据与 Fallback', 'SessionDB 与恢复', '扩展平台与多 Agent', '工程化测试与排障', '毕业设计'],
+	},
+];
+
+const courseSections = courses.map(({ label, prefix, overviews, stages: stageLabels }) => ({
+	label,
+	items: [
+		{ label: '课程导读', slug: prefix },
+		...overviews.map((page) => ({ label: page.label, slug: `${prefix}/${page.slug}` })),
+		{ label: '阶段导读', slug: `${prefix}/learning-path` },
+		{ label: '十个阶段', items: stages(prefix, stageLabels) },
+	],
+}));
+
 export default defineConfig({
 	site,
 	base,
@@ -19,7 +76,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Cairn Notes',
-			description: '我学习 AI Agent 时整理的笔记，包括 Pi、OpenSandbox 和通用软件工程基础。',
+			description: '我学习 AI Agent 时整理的笔记，包括 Pi、OpenSandbox、DeerFlow、LoopX、OpenClaw、Hermes 与通用软件工程基础。',
 			logo: {
 				src: './src/assets/cairn-mark.svg',
 				alt: 'Cairn Notes',
@@ -96,6 +153,7 @@ export default defineConfig({
 						{ label: '选修区', slug: 'opensandbox/electives' },
 					],
 				},
+				...courseSections,
 				{
 					label: '工程基础',
 					items: [

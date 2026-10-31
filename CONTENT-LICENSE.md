@@ -4,13 +4,15 @@ Copyright (c) 2026 JasonBuildAI.
 
 Cairn Notes 不是统一许可的项目，内容按来源分为三部分。
 
-## Pi 与 OpenSandbox 学习笔记
+## Pi、OpenSandbox 与四套源码课学习笔记
 
-`src/content/docs/pi/` 与 `src/content/docs/opensandbox/` 中由作者创作的文字、学习路线、架构分析、图表与原创示例采用 **Creative Commons Attribution-ShareAlike 4.0 International（CC BY-SA 4.0）**。
+`src/content/docs/pi/`、`src/content/docs/opensandbox/`、`src/content/docs/deerflow/`、`src/content/docs/loopx/`、`src/content/docs/openclaw/` 与 `src/content/docs/hermes/` 中由作者创作的文字、学习路线、架构分析、图表与原创示例采用 **Creative Commons Attribution-ShareAlike 4.0 International（CC BY-SA 4.0）**。
 
 - 许可摘要：<https://creativecommons.org/licenses/by-sa/4.0/>
 - 完整法律文本：[LICENSES/CC-BY-SA-4.0.txt](LICENSES/CC-BY-SA-4.0.txt)
 - 你可以复制、分发、改编，但必须署名、附上许可链接、注明是否修改，并以相同方式共享。
+
+四套源码课分别基于 DeerFlow、LoopX、OpenClaw 与 Hermes Agent 的公开源码整理。它们不是官方文档，也不重新授权上游源码；具体版本、提交或发布归档与上游许可见 [NOTICE.md](NOTICE.md)。
 
 ## 工程基础
 

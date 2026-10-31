@@ -92,6 +92,25 @@ const expected = [
 	'rights.md',
 	'about.md',
 ];
+
+const coursePages = [
+	'index.md',
+	'overview.md',
+	'core-mechanisms.md',
+	'engineering.md',
+	'learning-path.md',
+	...Array.from({ length: 10 }, (_, index) => `stage-${index}.md`),
+];
+const lifecyclePages = {
+	deerflow: 'run-lifecycle.md',
+	loopx: 'turn-lifecycle.md',
+	openclaw: 'message-lifecycle.md',
+	hermes: 'turn-lifecycle.md',
+};
+for (const [course, lifecyclePage] of Object.entries(lifecyclePages)) {
+	for (const page of [...coursePages, lifecyclePage]) expected.push(`${course}/${page}`);
+}
+
 for (const file of expected) {
 	if (!fs.existsSync(path.join(docsRoot, file))) errors.push(`缺少必要页面：src/content/docs/${file}`);
 }
