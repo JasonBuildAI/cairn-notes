@@ -49,11 +49,65 @@ function inspectDocs(directory) {
 		}
 		if (!/\.(md|mdx)$/.test(entry.name)) continue;
 		const text = fs.readFileSync(fullPath, 'utf8');
+		if (text.includes('\uFFFD')) errors.push(`发现乱码替换字符：${relativePath}`);
 		stats.push({
 			route: path.relative(path.join(root, 'src/content/docs'), fullPath).replaceAll(path.sep, '/'),
 			chars: text.length,
 		});
 	}
+}
+
+function collectDocs(directory) {
+	const files = [];
+	const collect = (current) => {
+		for (const entry of fs.readdirSync(current, { withFileTypes: true })) {
+			const full = path.join(current, entry.name);
+			if (entry.isDirectory()) collect(full);
+			else if (/\.(md|mdx)$/.test(entry.name)) files.push(full);
+		}
+	};
+	collect(directory);
+	return files;
+}
+
+function hasNonEnglishTextOutsideCode(text) {
+	const lines = text.split(/\r?\n/);
+	let inFence = false;
+	let inFrontmatter = false;
+	for (let index = 0; index < lines.length; index += 1) {
+		const line = lines[index];
+		if (index === 0 && line.trim() === '---') {
+			inFrontmatter = true;
+			continue;
+		}
+		if (inFrontmatter) {
+			if (line.trim() === '---') inFrontmatter = false;
+			else if (/[\u3400-\u9fff\u3000-\u303f\uff01-\uff5e]/.test(line)) return index + 1;
+			continue;
+		}
+		if (/^\s*(```|~~~)/.test(line)) {
+			inFence = !inFence;
+			continue;
+		}
+		if (!inFence && /[\u3400-\u9fff\u3000-\u303f\uff01-\uff5e]/.test(line)) return index + 1;
+	}
+	return 0;
+}
+
+function translationArtifactLine(text) {
+	const lines = text.split(/\r?\n/);
+	let inFence = false;
+	for (let index = 0; index < lines.length; index += 1) {
+		const line = lines[index];
+		if (/^\s*(```|~~~)/.test(line)) {
+			inFence = !inFence;
+			continue;
+		}
+		if (inFence) continue;
+		const prose = line.replace(/`+[^`\n]*`+/g, '');
+		if (/QXZ|\[\[|\]\]|\[[0-9]+\]/.test(prose)) return index + 1;
+	}
+	return 0;
 }
 
 function pageUrlFor(file) {
@@ -91,6 +145,12 @@ function inspectLinks(directory, basePath) {
 		const pageUrl = new URL(`https://example.invalid${pageUrlFor(file)}`);
 		const text = fs.readFileSync(file, 'utf8');
 		text.split(/\r?\n/).forEach((line, index) => {
+			if (/\]\s+\((?:\.{0,2}\/|https?:|mailto:|#|[A-Za-z0-9_.-]+\/)/.test(line)) {
+				errors.push(`Markdown 链接格式错误：${relativePath}:${index + 1}`);
+			}
+			if (/\]\(\s*\[https?:/.test(line)) {
+				errors.push(`Markdown 链接 URL 多出方括号：${relativePath}:${index + 1}`);
+			}
 			for (const match of line.matchAll(/\]\(([^)\s]+)\)/g)) {
 				let target = match[1];
 				if (/^(https?:|mailto:|tel:|#)/.test(target)) continue;
@@ -164,6 +224,27 @@ for (const [course, lifecyclePage] of Object.entries(lifecyclePages)) {
 
 for (const file of expected) {
 	if (!fs.existsSync(path.join(docsRoot, file))) errors.push(`缺少必要页面：src/content/docs/${file}`);
+}
+
+const sourceDocs = collectDocs(docsRoot).filter((file) => !path.relative(docsRoot, file).startsWith(`en${path.sep}`));
+const englishDocs = collectDocs(path.join(docsRoot, 'en'));
+for (const file of sourceDocs) {
+	const relative = path.relative(docsRoot, file);
+	if (!fs.existsSync(path.join(docsRoot, 'en', relative))) {
+		errors.push(`英文版缺少对应页面：src/content/docs/en/${relative.replaceAll(path.sep, '/')}`);
+	}
+}
+for (const file of englishDocs) {
+	const relative = path.relative(path.join(docsRoot, 'en'), file);
+	if (!fs.existsSync(path.join(docsRoot, relative))) {
+		errors.push(`英文版存在孤立页面：src/content/docs/en/${relative.replaceAll(path.sep, '/')}`);
+	}
+	const text = fs.readFileSync(file, 'utf8');
+	const relativePath = path.relative(root, file).replaceAll(path.sep, '/');
+	const artifactLine = translationArtifactLine(text);
+	if (artifactLine) errors.push(`英文版残留翻译占位符：${relativePath}:${artifactLine}`);
+	const cjkLine = hasNonEnglishTextOutsideCode(text);
+	if (cjkLine) errors.push(`英文版正文未完全翻译：${relativePath}:${cjkLine}`);
 }
 
 inspectLinks(docsRoot, readBasePath());

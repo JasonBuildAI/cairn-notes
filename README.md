@@ -1,5 +1,7 @@
 # Cairn Notes
 
+[简体中文](README.md) | [English edition](https://jasonbuildai.github.io/cairn-notes/en/)
+
 我学习 AI Agent 时整理的笔记，包括 Pi、OpenSandbox、四套 Agent 源码课，以及一组通用的软件工程基础。
 
 在线阅读：<https://jasonbuildai.github.io/cairn-notes/>
