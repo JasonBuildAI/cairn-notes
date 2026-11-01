@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run check:content && astro build",
+    "build": "npm run check:content && astro build && node scripts/localize-english-code-ui.mjs",
     "preview": "astro preview",
     "check:content": "node scripts/check-public-content.mjs",
     "assets": "node scripts/generate-brand-assets.mjs",
